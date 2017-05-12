@@ -5,7 +5,7 @@ const maps = require('gulp-sourcemaps');
 const minifyCss = require('gulp-minify-css');
 
 gulp.task('webpack:dev', () => {
-  gulp.src('./app/js/entry.js')
+  gulp.src(['./app/app.js', 'app/assets/js/**/*.js'])
   .pipe(webpack({
     devtool: 'source-map'
   }))
@@ -18,7 +18,7 @@ gulp.task('static:dev', () => {
 });
 
 gulp.task('sass:dev', () => {
-  return gulp.src('app/sass/**/*.scss')
+  return gulp.src('app/assets/sass/**/*.scss')
     .pipe(maps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCss())
