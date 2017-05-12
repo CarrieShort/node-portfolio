@@ -8,20 +8,9 @@
   <script src="https://use.fontawesome.com/3c8a12e723.js"></script>
 </head>
 
-<body>
-  <header>
-    <h1><a href="/" data-link="overview">Carrie <span></span> Short</a></h1>
-    <nav>
-      <a href="#" class="mobile-menu"><i class="fa fa-bars"></i></a>
-      <ul>
-        <li><a href="about">About</a></li>
-        <li><a href="history">History</a></li>
-        <li><a href="skills">Skills</a></li>
-        <li><a href="portfolio">Portfolio</a></li>
-        <li><a href="https://github.com/CarrieShort"><i class="fa fa-github"></i></a></li>
-      </ul>
-    </nav>
-  </header>
+<body data-ng-app="portfolioApp">
+
+<div data-nav-bar></div data-nav-bar>
   <section data-content="about">
     <h2>About</h2>
   </section>
@@ -49,6 +38,7 @@
 <p>Cras ornare placerat nisi at gravida. Curabitur condimentum erat purus, vel tristique ligula eleifend eu. Praesent bibendum consequat metus. Sed dictum tincidunt dolor, id fermentum libero ultrices ut. Nullam commodo eu nunc sit amet molestie. Cras lobortis scelerisque pellentesque. Aliquam non odio vitae tellus semper volutpat nec non arcu. In hac habitasse platea dictumst. Donec scelerisque pellentesque massa, in elementum tellus. Nulla malesuada feugiat ex. Ut pulvinar sapien a tincidunt porta. Phasellus ultrices leo eu porta eleifend. Proin bibendum tempus justo et luctus. Morbi et dictum metus, tempor pellentesque eros.</p>
   </section>
   <footer></footer>
+  <script src="./bundle.js"></script>
 </body>
 
 </html>

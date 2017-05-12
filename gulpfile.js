@@ -7,9 +7,12 @@ const minifyCss = require('gulp-minify-css');
 gulp.task('webpack:dev', () => {
   gulp.src(['./app/app.js', 'app/assets/js/**/*.js'])
   .pipe(webpack({
-    devtool: 'source-map'
+    devtool: 'source-map',
+    output: {
+      filename:'bundle.js'
+    }
   }))
-  .pipe(gulp.dest('bundle.js'));
+  .pipe(gulp.dest('./build'));
 });
 
 gulp.task('static:dev', () => {
