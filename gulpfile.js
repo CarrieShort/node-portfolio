@@ -9,7 +9,7 @@ gulp.task('webpack:dev', () => {
   .pipe(webpack({
     devtool: 'source-map',
     output: {
-      filename:'bundle.js'
+      filename: 'bundle.js'
     }
   }))
   .pipe(gulp.dest('./build'));
@@ -27,6 +27,11 @@ gulp.task('sass:dev', () => {
     .pipe(minifyCss())
     .pipe(maps.write())
     .pipe(gulp.dest('./build/css'));
+});
+
+gulp.task('image:dev', () => {
+  return gulp.src('app/images/*')
+  .pipe(gulp.dest('./build/images'));
 });
 
 gulp.task('build:dev', ['webpack:dev', 'static:dev', 'sass:dev']);
