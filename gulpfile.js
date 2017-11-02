@@ -30,9 +30,9 @@ gulp.task('sass:dev', () => {
 });
 
 gulp.task('image:dev', () => {
-  return gulp.src('app/images/*')
+  return gulp.src('app/assets/images/*')
   .pipe(gulp.dest('./build/images'));
 });
 
-gulp.task('build:dev', ['webpack:dev', 'static:dev', 'sass:dev']);
+gulp.task('build:dev', ['webpack:dev', 'static:dev', 'sass:dev', 'image:dev']);
 gulp.task('default', ['build:dev']);
