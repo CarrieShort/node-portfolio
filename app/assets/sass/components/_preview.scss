@@ -1,0 +1,31 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  article {
+    display: block;
+  }
+}
+
+.overlay {
+  background-color:rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media screen and (min-width: 680px) {
+  .projects {
+    article {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+      .overlay {
+        display: none;
+      }
+      &:hover .overlay{
+        display: block;
+      }
+    }
+  }
+}
