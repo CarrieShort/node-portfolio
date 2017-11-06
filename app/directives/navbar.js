@@ -16,13 +16,6 @@ module.exports = function(app) {
                  header.removeClass('sticky');
              }
         });
-        // scope.mobileMenuToggle = function() {
-        //   if (mobileNav.hasClass('hidden')) {
-        //     mobileNav.removeClass('hidden');
-        //   } else {
-        //     mobileNav.addClass('hidden');
-        //   }
-        // };
         $('.mobile-menu').on('click',function(e){
           e.preventDefault();
           $('nav ul').slideToggle();
