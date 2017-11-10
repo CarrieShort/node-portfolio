@@ -17,13 +17,13 @@
       display: block;
       li {
         display: block;
-        border: 1px solid #ffffff;
+        border: 1px solid $color-white;
         width: 145px;
         height: 145px;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
+        color: $color-white;
         margin: 5px;
         float: left;
         font-size: 1.3em;
