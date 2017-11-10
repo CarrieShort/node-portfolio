@@ -3,7 +3,7 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  color: $color-white;
+  color: $color-logo;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@ header {
     font-weight: 300;
     transition: all 0.4s ease;
     a {
-      color: $color-white;
+      color: $color-logo;
       text-decoration: none;
     }
     span {

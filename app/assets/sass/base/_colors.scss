@@ -6,8 +6,22 @@ $color-turquoise: #16c2d6;
 $color-dark-gray: #3a3a3a;
 $color-white: #ffffff;
 $color-black: #000000;
+$color-black-opacity50: rgba(0, 0, 0, 0.5);
 
 /* Semantic Mapping */
-$color-h2: $color-aquamarine;
+/* headers */
+$color-h2: $color-teal;
+
+/* navigation*/
 $color-nav-link-web: $color-white;
 $color-nav-link-mobile: $color-white;
+$color-logo: $color-white;
+
+/* portfolio preview*/
+$color-preview-text: $color-white;
+$color-preview-title: $color-white;
+$color-preview-subtitle: $color-aquamarine;
+$color-preview-overlay: $color-black-opacity50;
+
+/* banner*/
+$color-banner-highlight: $color-white;

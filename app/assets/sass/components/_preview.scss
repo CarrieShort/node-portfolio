@@ -9,6 +9,7 @@
       width: 100%;
     }
     h3 {
+      color:$color-preview-title;
       padding-bottom:10px;
     }
     p {
@@ -19,13 +20,13 @@
       }
     }
     .subtitle {
-      color:#91eed9;
+      color:$color-preview-subtitle;
     }
     a {
       display: block;
       width: 100%;
       height: 100%;
-      color: #ffffff;
+      color: $color-preview-text;
       .link {
         line-height: 20px;
         vertical-align: middle;
@@ -45,7 +46,7 @@
   transition: all 0.4s ease;
   box-sizing: border-box;
   padding: 20px;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: $color-preview-overlay;
   position: absolute;
   bottom: 0;
   width: 100%;
