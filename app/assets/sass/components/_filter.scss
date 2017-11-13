@@ -1,0 +1,16 @@
+.filter {
+  background-color: $color-filter-bg;
+  li {
+    color: $color-filter-item;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover {
+      background: $color-black;
+    }
+    span {
+      color: $color-filter-count;
+      font-size: 0.8em;
+    }
+  }
+}

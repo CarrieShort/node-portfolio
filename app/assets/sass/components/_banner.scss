@@ -13,6 +13,9 @@
 @media screen and (min-width: 680px) {
   .banner {
     height: 600px;
+    &.subpage {
+      height: 50px;
+    }
     ul {
       display: block;
       li {
