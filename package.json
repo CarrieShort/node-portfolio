@@ -25,6 +25,8 @@
     "superagent": "^3.5.2"
   },
   "devDependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
     "gulp-minify-css": "^1.2.4",

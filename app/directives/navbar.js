@@ -4,11 +4,9 @@ module.exports = function(app) {
       restrict: 'EAC',
       replace: true,
       templateUrl: '/templates/directives/navbar.html',
-      link: function(scope, elements, attrs, controller) {
-        var navHeight;
+      link: function(scope, elements) {
         var header = angular.element(elements[0]);
         var headerPosition = header[0].offsetTop;
-        var mobileNav = angular.element(document.querySelector('nav ul'));
         angular.element($window).bind('scroll', function() {
              if (this.pageYOffset > headerPosition) {
                  header.addClass('sticky');
@@ -16,7 +14,7 @@ module.exports = function(app) {
                  header.removeClass('sticky');
              }
         });
-        $('.mobile-menu').on('click',function(e){
+        $('.mobile-menu').on('click', function(e) {
           e.preventDefault();
           $('nav ul').slideToggle();
         });
