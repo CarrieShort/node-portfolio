@@ -3,6 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/build'));
+app.use(['/portfolio/*', '/portfolio', '/about'], express.static(__dirname + '/build'));
 app.use((req, res) => {
   res.status(404).send('Page not found!');
 });

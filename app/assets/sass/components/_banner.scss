@@ -13,8 +13,27 @@
 @media screen and (min-width: 680px) {
   .banner {
     height: 600px;
+    position: relative;
     &.subpage {
       height: 50px;
+    }
+    &.project {
+      background-size: cover;
+      height: 400px;
+      .overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:rgba(0,0,0, 0.5);
+        section {
+          position: absolute;
+          bottom: 0;
+          color: #ffffff;
+        }
+      }
     }
     ul {
       display: block;

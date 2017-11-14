@@ -1,6 +1,7 @@
 header {
   box-sizing: border-box;
   position: absolute;
+  z-index: 100;
   top: 0;
   width: 100%;
   color: $color-logo;
