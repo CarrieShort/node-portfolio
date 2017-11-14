@@ -1,0 +1,19 @@
+.contributions {
+  font-size: 0.9em;
+  h3 {
+    color: $color-teal;
+    padding-bottom: 10px;
+  }
+  li { line-height: 1.8em;
+    &:before {
+      content: '';
+      line-height: 1.8em;
+      display: inline-block;
+      background: $color-aquamarine;
+      width: 6px;
+      height: 6px;
+      transform: rotate(45deg);
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.overview {
+}
+
+.design {
+  clear: both;
+  background: $color-dark-gray;
+  color: $color-white;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  img {
+    height: 200px;
+    padding: 10px;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .contributions {
+    float: left;
+    width: calc(25% - 20px);
+    margin-left: 20px;
+  }
+  .overview {
+    h3 {
+      font-size: 1.6em;
+    }
+    width: 75%;
+    float: left;
+  }
+  .design {
+    h3 {
+      color: $color-aquamarine;
+      font-size: 1.6em;
+    }
+  }
+}
