@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
-// const projectRouter = require(__dirname + '/routes/projectRouter');
+const projectRouter = require(__dirname + '/routes/projectRouter');
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/db');
 
-// app.use('api/', projectRouter);
+app.use('/api', projectRouter);
 
 app.use(express.static(__dirname + '/build'));
 app.use(['/portfolio/*', '/portfolio', '/about'], express.static(__dirname + '/build'));

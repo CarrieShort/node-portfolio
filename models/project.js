@@ -9,7 +9,7 @@ var projectSchema = new mongoose.Schema({
   liveProject: { type: String },
   designImages: [String],
   designHTML: { type: String },
-  featured: { type: Boolean }
+  featured: { type: Boolean, required: true }
 });
 
 module.exports = mongoose.model('Project', projectSchema);
