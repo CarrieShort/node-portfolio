@@ -1,5 +1,5 @@
 {
-  "name": "test name",
+  "name": "more test name",
   "imagePath": "http://via.placeholder.com/350x250",
   "shortDesc": "I am a short description string",
   "overViewHTML": "<h2>I am a title</h2><p>I am a ton of content that will fill up a long page about the project.</p>",
@@ -7,5 +7,5 @@
   "liveProject": "https://github.com/CarrieShort/game-closet-api",
   "designImages": ["http://via.placeholder.com/400x300","http://via.placeholder.com/400x300","http://via.placeholder.com/400x300","http://via.placeholder.com/400x300"],
   "designHTML": "<h2>project description</h2><p>and some more info</p>",
-  "featured": true
+  "featured": false
 }

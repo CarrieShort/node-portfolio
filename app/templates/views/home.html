@@ -41,7 +41,8 @@
   <p>Cras ornare placerat nisi at gravida. Curabitur condimentum erat purus, vel tristique ligula eleifend eu. Praesent bibendum consequat metus. Sed dictum tincidunt dolor, id fermentum libero ultrices ut. Nullam commodo eu nunc sit amet molestie. Cras lobortis scelerisque pellentesque. Aliquam non odio vitae tellus semper volutpat nec non arcu. In hac habitasse platea dictumst. Donec scelerisque pellentesque massa, in elementum tellus. Nulla malesuada feugiat ex. Ut pulvinar sapien a tincidunt porta. Phasellus ultrices leo eu porta eleifend. Proin bibendum tempus justo et luctus. Morbi et dictum metus, tempor pellentesque eros.</p>
   <p>Cras ornare placerat nisi at gravida. Curabitur condimentum erat purus, vel tristique ligula eleifend eu. Praesent bibendum consequat metus. Sed dictum tincidunt dolor, id fermentum libero ultrices ut. Nullam commodo eu nunc sit amet molestie. Cras lobortis scelerisque pellentesque. Aliquam non odio vitae tellus semper volutpat nec non arcu. In hac habitasse platea dictumst. Donec scelerisque pellentesque massa, in elementum tellus. Nulla malesuada feugiat ex. Ut pulvinar sapien a tincidunt porta. Phasellus ultrices leo eu porta eleifend. Proin bibendum tempus justo et luctus. Morbi et dictum metus, tempor pellentesque eros.</p>
   </section>
-  <section class="projects">
+  <p data-ng-if="featuredCtrl.go()"></p>
+  <section class="projects" data-ng-init="featuredCtrl.getFeatured()">
     <h2>Featured Projects</h2>
-    <article data-ng-repeat="n in [0,1,2,3,4,5]"><portfolio-preview></portfolio-preview></article>
+    <article data-ng-repeat="project in featuredCtrl.all"><portfolio-preview data-target="featuredCtrl.all"></portfolio-preview></article>
 <ng-container>

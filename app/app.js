@@ -1,12 +1,15 @@
 const angular = require('angular');
 const portfolioApp = angular.module('portfolioApp', [require('angular-route')]);
 
+require('./controllers')(portfolioApp);
 require('./directives')(portfolioApp);
 
 portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $locationProvider) {
   $routing
     .when('/', {
-        templateUrl: '/templates/views/home.html'
+        templateUrl: '/templates/views/home.html',
+        controller: 'FeaturedController',
+        controllerAs: 'featuredCtrl'
       })
     .when('/portfolio', {
         templateUrl: '/templates/views/portfolio.html'
