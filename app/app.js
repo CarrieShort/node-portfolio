@@ -1,5 +1,5 @@
 const angular = require('angular');
-const portfolioApp = angular.module('portfolioApp', [require('angular-route')]);
+const portfolioApp = angular.module('portfolioApp', [require('angular-route'), require('angular-sanitize')]);
 
 require('./controllers')(portfolioApp);
 require('./directives')(portfolioApp);
@@ -12,10 +12,14 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $
         controllerAs: 'featuredCtrl'
       })
     .when('/portfolio', {
-        templateUrl: '/templates/views/portfolio.html'
+        templateUrl: '/templates/views/portfolio.html',
+        controller: 'ProjectController',
+        controllerAs: 'projectCtrl'
       })
       .when('/portfolio/foo', {
-          templateUrl: '/templates/views/detail.html'
+          templateUrl: '/templates/views/detail.html',
+          controller: 'ProjectController',
+          controllerAs: 'projectCtrl'
         })
     .when('/about', {
         templateUrl: '/templates/views/subpage.html'

@@ -1,4 +1,4 @@
-<ng-container>
+<ng-container data-ng-init="projectCtrl.getAll()">
   <section class="subpage banner"></section>
   <section class="filter">
     <ul>
@@ -14,6 +14,6 @@
     </ul>
   </section>
   <section class="projects">
-    <article data-ng-repeat="n in [0,1,2,3,4,5]"><portfolio-preview></portfolio-preview></article>
+    <article data-ng-repeat="project in projectCtrl.all"><portfolio-preview></portfolio-preview></article>
   </section>
 </ng-container>

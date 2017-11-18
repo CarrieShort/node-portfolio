@@ -1,15 +1,15 @@
 {
-  "name": "jump",
+  "name": "FooBar",
   "imagePath": "http://via.placeholder.com/350x250",
   "shortDesc": "I am a short description string",
   "overViewHTML": "<h2>I am a title</h2><p>I am a ton of content that will fill up a long page about the project.</p>",
   "githubUrl": "https://github.com/CarrieShort/game-closet-api",
   "liveProject": "https://github.com/CarrieShort/game-closet-api",
-  "designImages": ["http://via.placeholder.com/400x300","http://via.placeholder.com/400x300","http://via.placeholder.com/400x300","http://via.placeholder.com/400x300"],
+  "designImages": ["http://via.placeholder.com/400x300","http://via.placeholder.com/401x300","http://via.placeholder.com/400x200","http://via.placeholder.com/300x300"],
   "designHTML": "<h2>project description</h2><p>and some more info</p>",
-  "featured": false,
+  "featured": true,
   "keywords": ["jQuery", "javaScript", "express", "stuff1", "stuff2"],
-  "design": false,
+  "design": true,
   "contribution": ["UX/UI", "Visual Design", "stuff1", "stuff2", "stuff3"],
-  "seoURL": "jump-me"
+  "seoURL": "foo"
 }

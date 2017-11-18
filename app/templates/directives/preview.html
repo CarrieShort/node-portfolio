@@ -1,10 +1,10 @@
-<a href="#">
+<a href="portfolio/{{project.seoURL}}">
     <img src="http://imaging.nikon.com/lineup/lens/zoom/normalzoom/af-s_dx_18-140mmf_35-56g_ed_vr/img/sample/sample1_l.jpg" alt="projectname">
   <div class="overlay">
     <section>
       <h3>{{project.name}}</h3>
       <p>{{project.shortDesc}}</p>
-      <p><span class="subtitle">Technology:</span><span data-ng-repeat="keyword in project.contribution">blue</span></p>
+      <p><span class="subtitle">Technology: </span>{{project.keywords.join(', ')}}</p>
       <p class="link"><img src="images/logo-icon.png"> View Project</p>
   </section>
   </div>
