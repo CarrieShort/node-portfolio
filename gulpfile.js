@@ -30,7 +30,7 @@ gulp.task('sass:dev', () => {
 });
 
 gulp.task('image:dev', () => {
-  return gulp.src('app/assets/images/*')
+  return gulp.src('app/assets/images/**/*')
   .pipe(gulp.dest('./build/images'));
 });
 

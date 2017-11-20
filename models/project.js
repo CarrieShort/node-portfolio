@@ -11,6 +11,7 @@ var projectSchema = new mongoose.Schema({
   liveProject: { type: String },
   designImages: [String],
   designHTML: { type: String },
+  colorScheme: [String],
   featured: { type: Boolean, required: true },
   keywords: [String],
   contribution: [String]

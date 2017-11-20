@@ -1,4 +1,11 @@
 .overview {
+  ul {
+    li {
+      list-style: disc;
+      line-height: 1.8em;
+      list-style-position: inside;
+    }
+  }
 }
 
 .design {

@@ -16,7 +16,7 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $
         controller: 'ProjectController',
         controllerAs: 'projectCtrl'
       })
-      .when('/portfolio/foo', {
+      .when('/portfolio/:name', {
           templateUrl: '/templates/views/detail.html',
           controller: 'ProjectController',
           controllerAs: 'projectCtrl'

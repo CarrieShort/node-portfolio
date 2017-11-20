@@ -4,7 +4,7 @@ module.exports = function(app) {
       var projectPath = $location.path().split('/').pop();
       $http({
         method: 'GET',
-        url: 'api/projects/' + projectPath
+        url: 'api/project/' + projectPath
       }).then((res) => {
         this.projectData = res.data;
       }, (response) => {

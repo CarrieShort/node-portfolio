@@ -15,7 +15,19 @@ projectRouter.post('/projects', bodyParser, (req, res) => {
   });
 });
 
-projectRouter.get('/projects/:projectURL', (req, res) => {
+
+projectRouter.get('/projects/featured', (req, res) => {
+  Project.find({ featured: true }, (err, data) => {
+    if (err) {
+        return res.status(500).json({
+      msg: 'there was an error while trying to retrieve data'
+      });
+    }
+    res.status(200).json(data);
+  });
+});
+
+projectRouter.get('/project/:projectURL', (req, res) => {
   Project.findOne({ seoURL: req.params.projectURL }, (err, data) => {
     if (err) {
         return res.status(500).json({
@@ -28,17 +40,6 @@ projectRouter.get('/projects/:projectURL', (req, res) => {
 
 projectRouter.get('/projects', (req, res) => {
   Project.find({}, (err, data) => {
-    if (err) {
-        return res.status(500).json({
-      msg: 'there was an error while trying to retrieve data'
-      });
-    }
-    res.status(200).json(data);
-  });
-});
-
-projectRouter.get('/projects/featured', (req, res) => {
-  Project.find({ featured: true }, (err, data) => {
     if (err) {
         return res.status(500).json({
       msg: 'there was an error while trying to retrieve data'
