@@ -8,8 +8,8 @@
   "featured": true,
   "keywords": ["jQuery", "CSS", "firebase", "page.js", "google maps", "ajax", "proxy server"],
   "design": true,
-  "designHTML": ""
-  "colorScheme":["4d73b8", "355ca4", "6c95e0", "f3ead4", "5e5e5e"],
+  "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. I chose a color scheme focused on blues to reflect the nature of the product.</p>",
+  "colorScheme": ["4d73b8", "355ca4", "6c95e0", "f3ead4", "5e5e5e"],
   "designImages": ["/images/projects/ebb-tracker/wireframe_01.png","/images/projects/ebb-tracker/wireframe_02.png","/images/projects/ebb-tracker/wireframe_03.png","/images/projects/ebb-tracker/wireframe_04.png"],
   "contribution": ["product Owner", "UX/UI", "Visual Design", "CSS", "HTML", "javaScript", "jQuery"],
   "seoURL": "ebb-tracker"

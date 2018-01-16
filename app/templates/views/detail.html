@@ -24,17 +24,15 @@
   <ng-container ng-if="projectCtrl.projectData.design == true">
   <section class="design">
   <h3>Design</h3>
-  <article class="gallery" data-ng-repeat="design in projectCtrl.projectData.designImages">
-    <img ng-src="{{design}}">
+  <article class="gallery">
+    <img data-ng-repeat="design in projectCtrl.projectData.designImages" ng-src="{{design}}">
   </article>
-  <article class="specs" data-ng-bind-html="projectCtrl.projectData.designHTML">
+  <article class="specs">
     <h4>Palette</h4>
-    <p>AaBbCc123</p>
+    <p data-ng-repeat="color in projectCtrl.projectData.colorScheme"><span class="color-block" style="background-color: #{{color}}"></span</p>
     <h4>Design Choices</h4>
+    <section data-ng-bind-html="projectCtrl.projectData.designHTML"></section>
   </article>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus sodales nibh, ornare feugiat augue porta non. Fusce auctor tortor et sem blandit dapibus. Etiam magna magna, feugiat eu finibus a, cursus nec lacus. Cras bibendum volutpat suscipit. Donec eleifend, tortor ut porttitor dictum, arcu neque cursus enim, quis lobortis odio felis in mauris. Donec feugiat et neque nec maximus. Pellentesque blandit placerat tortor. Donec interdum purus ut eleifend dignissim. Praesent gravida aliquet elit, eget consectetur ex commodo non.</p>
-  <p>Cras ornare placerat nisi at gravida. Curabitur condimentum erat purus, vel tristique ligula eleifend eu. Praesent bibendum consequat metus. Sed dictum tincidunt dolor, id fermentum libero ultrices ut. Nullam commodo eu nunc sit amet molestie. Cras lobortis scelerisque pellentesque. Aliquam non odio vitae tellus semper volutpat nec non arcu. In hac habitasse platea dictumst. Donec scelerisque pellentesque massa, in elementum tellus. Nulla malesuada feugiat ex. Ut pulvinar sapien a tincidunt porta. Phasellus ultrices leo eu porta eleifend. Proin bibendum tempus justo et luctus. Morbi et dictum metus, tempor pellentesque eros.</p>
-  <p>Cras ornare placerat nisi at gravida. Curabitur condimentum erat purus, vel tristique ligula eleifend eu. Praesent bibendum consequat metus. Sed dictum tincidunt dolor, id fermentum libero ultrices ut. Nullam commodo eu nunc sit amet molestie. Cras lobortis scelerisque pellentesque. Aliquam non odio vitae tellus semper volutpat nec non arcu. In hac habitasse platea dictumst. Donec scelerisque pellentesque massa, in elementum tellus. Nulla malesuada feugiat ex. Ut pulvinar sapien a tincidunt porta. Phasellus ultrices leo eu porta eleifend. Proin bibendum tempus justo et luctus. Morbi et dictum metus, tempor pellentesque eros.</p>
 </section>
 </ng-container>
 
