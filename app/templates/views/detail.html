@@ -25,14 +25,16 @@
   <section class="design">
   <h3>Design</h3>
   <article class="gallery">
-    <img data-ng-repeat="design in projectCtrl.projectData.designImages" ng-src="{{design}}">
+    <a data-ng-repeat="design in projectCtrl.projectData.designImages" href="{{design}}" data-lightbox="roadtrip">
+    <img ng-src="{{design}}"></a>
   </article>
   <article class="specs">
     <h4>Palette</h4>
-    <p data-ng-repeat="color in projectCtrl.projectData.colorScheme"><span class="color-block" style="background-color: #{{color}}"></span</p>
+    <p class="palette"><span data-ng-repeat="color in projectCtrl.projectData.colorScheme" class="color-block" style="background-color: #{{color}}"></span</p>
     <h4>Design Choices</h4>
     <section data-ng-bind-html="projectCtrl.projectData.designHTML"></section>
   </article>
+  <div class="clear"></div>
 </section>
 </ng-container>
 

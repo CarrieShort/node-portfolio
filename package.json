@@ -21,6 +21,7 @@
   "homepage": "https://github.com/CarrieShort/node-portfolio#readme",
   "dependencies": {
     "express": "^4.15.2",
+    "lightbox2": "^2.10.0",
     "mongoose": "^4.9.8",
     "superagent": "^3.5.2"
   },
