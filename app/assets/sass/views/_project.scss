@@ -1,12 +1,3 @@
-.overview {
-  ul {
-    li {
-      list-style: disc;
-      line-height: 1.8em;
-      list-style-position: inside;
-    }
-  }
-}
 .project {
   clear: both;
   background: $color-dark-gray;
@@ -47,50 +38,6 @@
     background: #000000;
     float: left;
   }
-  p {clear:both;}
-}
-.design {
-  clear: both;
-  background: $color-dark-gray;
-  color: $color-white;
-  h3 {
-    color: $color-muted-aquamarine;
-    padding-bottom: 20px;
-  }
-  h4 {
-    clear: both;
-  }
-  .specs {
-    clear: both;
-    margin-top: 20px;
-    h4 {
-      color: $color-light-gray;
-    }
-  }
-}
-.gallery {
-  width: 100%;
-    a {
-    display: block;
-    float: left;
-    width: calc(50% - 10px);
-    height: 0;
-    padding-bottom: 40%;
-    overflow: hidden;
-    margin: 5px;
-  }
-  img {
-    width: 100%;
-  }
-}
-.palette {
-  .color-block {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    float: left;
-  }
 }
 
 @media screen and (min-width: 680px) {
@@ -119,20 +66,6 @@
     width: 75%;
     float: left;
   }
-  .design {
-    .gallery {
-      float: left;
-      width: 60%;
-    }
-    .specs {
-      clear: none;
-      padding:5px 10px;
-      float: left;
-      width: calc(40% - 20px);
-      float: left;
-      margin-top: 0;
-    }
-  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -142,24 +75,6 @@
     }
     img {
       width: 50%;
-    }
-  }
-  .design {
-    .gallery {
-      float: left;
-      width: 60%;
-      a {
-        width: calc(33% - 10px);
-        padding-bottom: 28%;
-      }
-    }
-    .specs {
-      clear: none;
-      padding:5px 10px;
-      float: left;
-      width: calc(40% - 20px);
-      float: left;
-      margin-top: 0;
     }
   }
 }
