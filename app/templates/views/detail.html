@@ -5,8 +5,8 @@
         <h2>{{projectCtrl.projectData.name}}</h2>
         <p>{{projectCtrl.projectData.shortDesc}}</p>
         <h3><span class="subtitle">Project Includes</span></h3>
-        <ul data-ng-repeat="keyword in projectCtrl.projectData.keywords" class="keywords">
-          <li>{{keyword}}</li>
+        <ul class="keywords">
+          <li data-ng-repeat="keyword in projectCtrl.projectData.keywords">{{keyword}}</li>
         </ul>
         <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}"><img src="images/logo-icon.png"> View Project on Github</a></p>
         <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img src="images/logo-icon.png"> Live Website</a></p>
