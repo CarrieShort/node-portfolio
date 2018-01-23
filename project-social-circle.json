@@ -3,8 +3,6 @@
   "imagePath": "/images/projects/social-circle/preview.png",
   "shortDesc": "jQuery Plugin for building animated circular navigation",
   "overViewHTML": "<p>A simple jQuery plugin that creates an animated navigation menu that can be expanded or collapsed by clicking on a center icon. I wanted to try out the process of creating a jQuery plugin with customizable settings and a project of this scope seemed like a good fit. The plugin's settings can be customized in the following ways:</p> <ul><li>rotate: determines the starting placement of the icons.</li> <li>radius determines how far the icons appear from the center of the circle in pixels.</li> <li>circleSize: determines what portion of the circumference of a circle is used.</li> <li>Speed: changes the animation speed of the icons.</li></p>",
-  "githubUrl": "https://github.com/CarrieShort/socialCircle",
-  "liveProject": "http://carrieshort.github.io/socialCircle/",
   "featured": true,
   "keywords": ["jQuery", "CSS"],
   "design": false,

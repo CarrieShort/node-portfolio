@@ -7,19 +7,62 @@
     }
   }
 }
-
+.project {
+  clear: both;
+  background: $color-dark-gray;
+  color: $color-white;
+  padding: 10px;
+  h2 {
+    color: $color-light-gray;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: $color-light-gray;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: $color-aquamarine;
+    text-decoration: none;
+  }
+  ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 10px 5px 0;
+    background: #000000;
+    float: left;
+  }
+  p {clear:both;}
+}
 .design {
   clear: both;
   background: $color-dark-gray;
   color: $color-white;
+  h3 {
+    color: $color-aquamarine;
+    padding-bottom: 20px;
+  }
+  h4 {
+    clear: both;
+  }
+  .specs {
+    clear: both;
+    margin-top: 20px;
+    h4 {
+      color: $color-light-gray;
+    }
+  }
 }
 .gallery {
   width: 100%;
     a {
     display: block;
-    width: calc(100% - 10px);
+    float: left;
+    width: calc(50% - 10px);
     height: 0;
-    padding-bottom: 75%;
+    padding-bottom: 40%;
     overflow: hidden;
     margin: 5px;
   }
@@ -27,54 +70,83 @@
     width: 100%;
   }
 }
-
-.color-block {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 5px;
-  float: left;
+.palette {
+  .color-block {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    float: left;
+  }
 }
 
 @media screen and (min-width: 680px) {
+  .project {
+    clear: both;
+    background: $color-dark-gray;
+    color: $color-white;
+    padding: 20px;
+    section {
+      box-sizing: border-box;
+      width: 35%;
+      padding-right: 30px;
+      float: left;
+    }
+    img {
+      width: 65%;
+      float: right;
+    }
+  }
   .contributions {
     float: left;
     width: calc(25% - 20px);
     margin-left: 20px;
   }
   .overview {
-    h3 {
-      font-size: 1.6em;
-    }
     width: 75%;
     float: left;
   }
   .design {
-    h3 {
-      color: $color-aquamarine;
-      font-size: 1.6em;
-    }
-  }
-  .gallery {
-    float: left;
-    width: 60%;
-    a {
+    .gallery {
       float: left;
-      width: calc(50% - 10px);
-      height: 0;
-      padding-bottom: 45%;
-      overflow: hidden;
-      margin: 5px;
+      width: 60%;
+    }
+    .specs {
+      clear: none;
+      padding:5px 10px;
+      float: left;
+      width: calc(40% - 20px);
+      float: left;
+      margin-top: 0;
     }
   }
-  .specs {
-    padding:5px 10px;
-    float: left;
-    width: calc(40% - 20px);
-    float: left;
-    h4 {
-      clear: both;
-      color: $color-light-gray;
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+    section {
+      width: 50%;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  .design {
+    .gallery {
+      float: left;
+      width: 60%;
+      a {
+        width: calc(33% - 10px);
+        padding-bottom: 28%;
+      }
+    }
+    .specs {
+      clear: none;
+      padding:5px 10px;
+      float: left;
+      width: calc(40% - 20px);
+      float: left;
+      margin-top: 0;
     }
   }
 }

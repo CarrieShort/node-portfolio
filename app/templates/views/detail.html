@@ -1,12 +1,18 @@
 <ng-container data-ng-init="projectCtrl.getProject()">
-  <section class="banner project" style="background-image: url('{{projectCtrl.projectData.imagePath}}')">
-    <div class="overlay">
+  <section class="subpage banner"></section>
+  <section class="project">
       <section>
         <h2>{{projectCtrl.projectData.name}}</h2>
         <p>{{projectCtrl.projectData.shortDesc}}</p>
-        <p><span class="subtitle">Technology:</span> {{projectCtrl.projectData.keywords.join(', ')}}</p>
+        <h3><span class="subtitle">Project Includes</span></h3>
+        <ul data-ng-repeat="keyword in projectCtrl.projectData.keywords" class="keywords">
+          <li>{{keyword}}</li>
+        </ul>
+        <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}">View Project on Github</a></p>
+        <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}">Live Website</a></p>
     </section>
-    </div>
+    <img ng-src="{{projectCtrl.projectData.imagePath}}">
+    <div class="clear"></div>
   </section>
   <section>
     <section class="contributions">
@@ -27,10 +33,11 @@
   <article class="gallery">
     <a data-ng-repeat="design in projectCtrl.projectData.designImages" href="{{design}}" data-lightbox="roadtrip">
     <img ng-src="{{design}}"></a>
+    <div class="clear"></div>
   </article>
   <article class="specs">
     <h4>Palette</h4>
-    <p class="palette"><span data-ng-repeat="color in projectCtrl.projectData.colorScheme" class="color-block" style="background-color: #{{color}}"></span</p>
+    <p class="palette"><span data-ng-repeat="color in projectCtrl.projectData.colorScheme" class="color-block" style="background-color: #{{color}}"></span><div class="clear"></div></p>
     <h4>Design Choices</h4>
     <section data-ng-bind-html="projectCtrl.projectData.designHTML"></section>
   </article>

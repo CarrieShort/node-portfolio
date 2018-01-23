@@ -7,6 +7,7 @@ $color-dark-gray: #3a3a3a;
 $color-white: #ffffff;
 $color-black: #000000;
 $color-black-opacity50: rgba(0, 0, 0, 0.5);
+$color-black-opacity75: rgba(0, 0, 0, 0.75);
 $color-light-gray: #a8a8a8;
 
 /* Semantic Mapping */
@@ -22,7 +23,7 @@ $color-logo: $color-white;
 $color-preview-text: $color-white;
 $color-preview-title: $color-white;
 $color-preview-subtitle: $color-aquamarine;
-$color-preview-overlay: $color-black-opacity50;
+$color-preview-overlay: $color-black-opacity75;
 
 /* banner*/
 $color-banner-highlight: $color-white;
