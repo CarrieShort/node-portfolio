@@ -45,3 +45,5 @@ db
 
 #json files
 .json
+
+.DS_Store
