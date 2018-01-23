@@ -8,8 +8,8 @@
         <ul data-ng-repeat="keyword in projectCtrl.projectData.keywords" class="keywords">
           <li>{{keyword}}</li>
         </ul>
-        <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}">View Project on Github</a></p>
-        <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}">Live Website</a></p>
+        <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}"><img src="images/logo-icon.png"> View Project on Github</a></p>
+        <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img src="images/logo-icon.png"> Live Website</a></p>
     </section>
     <img ng-src="{{projectCtrl.projectData.imagePath}}">
     <div class="clear"></div>

@@ -26,6 +26,19 @@
   a {
     color: $color-aquamarine;
     text-decoration: none;
+    opacity: 0.8;
+    img {
+      width: 20px;
+      height: 20px;
+      display: block;
+      float:left;
+      padding-right: 10px;
+      transform: rotate(-90deg);
+    }
+    &:hover {
+      // color: $color-aquamarine;
+      opacity: 1;
+    }
   }
   ul li {
     display: inline-block;
@@ -41,7 +54,7 @@
   background: $color-dark-gray;
   color: $color-white;
   h3 {
-    color: $color-aquamarine;
+    color: $color-muted-aquamarine;
     padding-bottom: 20px;
   }
   h4 {
