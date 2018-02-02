@@ -24,6 +24,9 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $
     .when('/about', {
         templateUrl: '/templates/views/subpage.html'
       })
+    .when('/history', {
+        templateUrl: '/templates/views/history.html'
+      })
     .when('/portfolio/:project', {
         templateUrl: '/templates/views/project.html'
       })

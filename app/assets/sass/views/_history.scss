@@ -1,0 +1,62 @@
+.history {
+  padding: 0;
+  h2 {
+    width: 100%;
+    font-size: 1.4em;
+    color: $color-light-gray;
+    padding: 10px 0;
+  }
+  h3 {
+    color: $color-teal;
+    font-size: 1.2em;
+    span {
+      display: block;
+      padding: 5px 0;
+    }
+    .year {
+      font-size: 0.8em;
+      color: $color-light-gray;
+    }
+  }
+  h4 {
+    font-size: 1.2em;
+    color: $color-muted-aquamarine;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background: $color-white;
+    .company {
+      color: $color-dark-gray;
+    }
+    ul {
+      display: block;
+      box-sizing: border-box;
+      width: calc(20% - 20px);
+      border-right: 1px solid $color-light-gray;
+      // background: $color-dark-gray;
+      // color: $color-white;
+      // padding: 0 20px;
+      // li {
+      //   color: $color-muted-aquamarine;
+      //   padding: 10px 0;
+      // }
+    }
+    .summary {
+      width: 80%;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+  }
+  article:nth-child(2n) {
+    background: $color-dark-gray;
+    color: $color-white;
+    h2, .year {
+      color: $color-light-gray;
+    }
+    h3 {
+      color: $color-muted-aquamarine;
+    }
+  }
+}
