@@ -19,5 +19,5 @@
   <p data-ng-if="featuredCtrl.go()"></p>
   <section class="projects" data-ng-init="featuredCtrl.getFeatured()">
     <h2>Featured Projects</h2>
-    <article data-ng-repeat="project in featuredCtrl.all"><portfolio-preview ></portfolio-preview></article>
+    <portfolio-preview data-ng-repeat="project in featuredCtrl.all"></portfolio-preview>
 <ng-container>

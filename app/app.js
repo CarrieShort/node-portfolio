@@ -3,6 +3,7 @@ const portfolioApp = angular.module('portfolioApp', [require('angular-route'), r
 
 require('./controllers')(portfolioApp);
 require('./directives')(portfolioApp);
+require('./services')(portfolioApp);
 
 portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $locationProvider) {
   $routing
