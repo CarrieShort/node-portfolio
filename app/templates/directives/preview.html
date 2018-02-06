@@ -1,11 +1,13 @@
+<article class="mix {{project.classes.join(' ') | lowercase}}">
 <a href="portfolio/{{project.seoURL}}">
     <img src="{{project.imagePath}}" alt="project.name">
   <div class="overlay">
     <section>
       <h3>{{project.name}}</h3>
       <p>{{project.shortDesc}}</p>
-      <p><span class="subtitle">Technology: </span>{{project.keywords.join(', ')}}</p>
+      <p><span class="subtitle">Technology: </span>{{project.classes.join(', ')}}</p>
       <p class="link"><img src="images/logo-icon.png"> View Project</p>
   </section>
   </div>
 </a>
+</article>

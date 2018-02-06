@@ -2,18 +2,11 @@
   <section class="subpage banner"></section>
   <section class="filter">
     <ul>
-      <li>UX/UI <span class="number">(12)</span></li>
-      <li>Visual Design <span class="number">(12)</span></li>
-      <li>HTML <span class="number">(12)</span></li>
-      <li>CSS <span class="number">(12)</span></li>
-      <li>jQuery <span class="number">(12)</span></li>
-      <li>javaScript <span class="number">(12)</span></li>
-      <li>Node <span class="number">(12)</span></li>
-      <li>React <span class="number">(12)</span></li>
-      <li>Angular <span class="number">(12)</span></li>
+      <li data-filter="all">All <span class="number">({{projectCtrl.all.length}})</span></li>
+      <li data-ng-repeat="(key, value) in projectCtrl.all.keywordCount" data-filter=".category-{{projectCtrl.helpers.replaceSpace(key, '-') | lowercase}}">{{key}} <span class="number">({{value}})</span> </li>
     </ul>
   </section>
-  <section class="projects">
-    <article data-ng-repeat="project in projectCtrl.all"><portfolio-preview></portfolio-preview></article>
+  <section class="projects container" mix-it-up entities='projectCtrl.all'>
+    <portfolio-preview data-ng-repeat="project in projectCtrl.all" on-finish-emit="projectsLoaded"></portfolio-preview>
   </section>
 </ng-container>
