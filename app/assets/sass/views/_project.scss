@@ -1,8 +1,12 @@
 .project {
-  clear: both;
+  display: flex;
+  flex-wrap: wrap;
   background: $color-dark-gray;
   color: $color-white;
   padding: 10px;
+  section {
+    box-sizing: border-box;
+  }
   h2 {
     color: $color-light-gray;
   }
@@ -21,8 +25,7 @@
     img {
       width: 20px;
       height: 20px;
-      display: block;
-      float:left;
+      display: inline-block;
       padding-right: 10px;
       transform: rotate(-90deg);
     }
@@ -36,7 +39,6 @@
     padding: 10px;
     margin: 5px 10px 5px 0;
     background: #000000;
-    float: left;
   }
 }
 
@@ -46,35 +48,30 @@
     background: $color-dark-gray;
     color: $color-white;
     padding: 20px;
-    section {
-      box-sizing: border-box;
+    section:first-child {
       width: 35%;
-      padding-right: 30px;
-      float: left;
     }
-    img {
+    section:last-child {
       width: 65%;
-      float: right;
+      padding-left: 20px;
     }
   }
   .contributions {
-    float: left;
     width: calc(25% - 20px);
     margin-left: 20px;
   }
   .overview {
     width: 75%;
-    float: left;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .project {
-    section {
+    > section {
       width: 50%;
     }
-    img {
-      width: 50%;
+    section:last-child {
+      padding-left: 20px;
     }
   }
 }

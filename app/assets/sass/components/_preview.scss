@@ -51,13 +51,18 @@
     width: 100%;
   }
 }
+.details {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 @media screen and (min-width: 680px) {
   .projects {
+    display: flex;
+    flex-wrap: wrap;
     article {
-      width: calc(50% - 20px);
+      max-width: calc(50% - 20px);
       margin: 10px;
-      float:left;
       img {
         width: 100%;
       }
@@ -82,9 +87,7 @@
 @media screen and (min-width: 1200px) {
   .projects {
     article {
-      width: calc(100%/3 - 20px);
-      margin: 10px;
-      float:left;
+      max-width: calc(100%/3 - 20px);
     }
   }
 }

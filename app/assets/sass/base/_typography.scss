@@ -3,6 +3,10 @@
   font-size: 100%;
 }
 
+h2, h3, h4, h5, h6 {
+  width: 100%;
+}
+
 p {
   font-size: 1em;
   line-height: 1.6em;
@@ -21,4 +25,12 @@ h3 {
 
 h4 {
   font-size: 1.2em;
+}
+ul {
+  li {
+    line-height: 1.6em;
+    padding: 0.4em 0 1em 0;
+    list-style: disc;
+    list-style-position: inside;
+  }
 }

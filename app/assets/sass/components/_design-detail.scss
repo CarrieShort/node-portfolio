@@ -1,4 +1,6 @@
 .design {
+  display: flex;
+  flex-wrap: wrap;
   clear: both;
   background: $color-dark-gray;
   color: $color-white;
@@ -18,12 +20,13 @@
   }
   .gallery {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
       a {
       display: block;
-      float: left;
-      width: calc(50% - 10px);
-      height: 0;
-      padding-bottom: 40%;
+      max-width: calc(50% - 10px);
+      // height: 0;
+      // padding-bottom: 40%;
       overflow: hidden;
       margin: 5px;
     }
@@ -36,15 +39,12 @@
 @media screen and (min-width: 680px) {
   .design {
     .gallery {
-      float: left;
       width: 60%;
     }
     .specs {
       clear: none;
       padding:5px 10px;
-      float: left;
       width: calc(40% - 20px);
-      float: left;
       margin-top: 0;
     }
   }
@@ -54,7 +54,7 @@
   .design {
     .gallery {
       a {
-        width: calc(33% - 10px);
+        max-width: calc(33% - 10px);
         padding-bottom: 28%;
       }
     }
