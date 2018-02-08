@@ -12,7 +12,7 @@
         <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img src="images/logo-icon.png"> Live Website</a></p>
     </section>
     <section>
-    <img ng-src="{{projectCtrl.projectData.imagePath}}">
+    <img ng-src="{{projectCtrl.projectData.imagePath}}/preview.png">
     </section>
   </section>
   <section class="details">
@@ -32,8 +32,8 @@
   <section class="design">
   <h3>Design</h3>
   <article class="gallery">
-    <a data-ng-repeat="design in projectCtrl.projectData.designImages" href="{{design}}" data-lightbox="roadtrip">
-    <img ng-src="{{design}}"></a>
+    <a data-ng-repeat="design in projectCtrl.projectData.designImages" href="{{projectCtrl.projectData.imagePath}}{{design}}" data-lightbox="roadtrip">
+    <img ng-src="{{projectCtrl.projectData.imagePath}}{{design}}"></a>
   </article>
   <article class="specs">
     <h4>Palette</h4>

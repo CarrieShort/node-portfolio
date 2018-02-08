@@ -17,7 +17,54 @@
     <p>I'm a newly minted full stack javaScript Developer with a long history of product design and front end development. I got started in 2004 with a college job at the university of Montana, where students would design and develop websites for faculty, programs and other students. We would use fireworks to design a website and build out the website with HTML, CSS and flash. Since then I've made a career as a graphich designer and web developer sticking primarily to the front end. I've always found my favorite part of my job was the development side, so I recently took a series of courses at Code Fellows in order to improve my development skills and make a career shift into a full time development role.</p>
   </section>
   <p data-ng-if="featuredCtrl.go()"></p>
-  <section class="projects" data-ng-init="featuredCtrl.getFeatured()">
-    <h2>Featured Projects</h2>
-    <portfolio-preview data-ng-repeat="project in featuredCtrl.all"></portfolio-preview>
+    <section data-content="skills" class="experience">
+       <article>
+         <h3>Technology</h3>
+         <ul class="contributions">
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>node.js</li>
+           <li>angular</li>
+           <li>react</li>
+           <li>javaScript</li>
+           <li>jQuery</li>
+           <li>SQL</li>
+           <li>Regular Expression</li>
+           <li>PHP</li>
+           <li>MongoDB</li>
+         </ul>
+       </article>
+       <article>
+         <h3>Skills</h3>
+         <ul class="contributions">
+           <li>Project Management</li>
+           <li>UX Design</li>
+           <li>Graphic Design</li>
+           <li>Prototyping</li>
+           <li>Front End Development</li>
+           <li>Node Development</li>
+           <li>Unit Testing</li>
+           <li>A/B Testing</li>
+         </ul>
+       </article>
+       <article>
+         <h3>Software</h3>
+         <ul class="contributions">
+           <li>Photoshop</li>
+           <li>Illustrator</li>
+           <li>Sketch</li>
+           <li>Moqups</li>
+           <li>Axure</li>
+           <li>Splunk</li>
+           <li>Visual Website Optimizer</li>
+           <li>Invision</li>
+           <li>Wordpress</li>
+           <li>Magento</li>
+         </ul>
+       </article>
+     </section>
+     <section class="projects" data-ng-init="featuredCtrl.getFeatured()">
+       <h2>Featured Projects</h2>
+       <portfolio-preview data-ng-repeat="project in featuredCtrl.all"></portfolio-preview>
+     </section>
 <ng-container>

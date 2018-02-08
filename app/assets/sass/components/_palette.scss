@@ -1,9 +1,10 @@
 .palette {
+  display: flex;
+  flex-wrap: wrap;
   .color-block {
     display: block;
     width: 30px;
     height: 30px;
     margin: 5px;
-    float: left;
   }
 }

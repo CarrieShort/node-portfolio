@@ -1,0 +1,23 @@
+.experience {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background: $color-dark-gray;
+  article {
+    border: 1px solid $color-light-gray;
+    color: $color-light-gray;
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc((100% / 3) - 20px);
+    h3 {
+      color: $color-muted-aquamarine;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $color-light-gray
+    }
+    .contributions {width: 100%;}
+  }
+}
