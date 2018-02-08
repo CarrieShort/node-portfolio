@@ -31,18 +31,21 @@ header {
   }
   nav {
     width: 100%;
-    ul li {
-      display: block;
-      border-bottom: 1px solid $color-black;
-      margin-right: 20px;
-      padding: 10px;
-      font-size: 1.3em;
-      a {
-        color: $color-nav-link-mobile;
-        text-decoration: none;
-      }
-      &:last-child {
-        border-bottom: none;
+    ul {
+      display: none;
+      li {
+        display: block;
+        border-bottom: 1px solid $color-black;
+        margin-right: 20px;
+        padding: 10px;
+        font-size: 1.3em;
+        a {
+          color: $color-nav-link-mobile;
+          text-decoration: none;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
       }
     }
   }

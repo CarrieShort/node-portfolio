@@ -18,6 +18,9 @@ module.exports = function(app) {
           e.preventDefault();
           $('nav ul').slideToggle();
         });
+        $('nav ul li').on('click', function(e) {
+          $('nav ul').slideUp();
+        });
       }
     };
   }]);

@@ -5,14 +5,39 @@
   display:flex;
   align-items: flex-end;
   height: 300px;
-  ul {
+   ul {
     display: none;
   }
   &.project {
     background-size: cover;
     height: 300px;
     position: relative;
-    width: 50%;
+    width: 100%;
+    .overlay {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:rgba(0,0,0, 0.6);
+      article {
+        position: absolute;
+        bottom: 0;
+        color: #ffffff;
+        max-width: 75%;
+        padding: 10px;
+        h2 {
+          color:$color-aquamarine;
+        }
+        h3 {
+          display: none;
+        }
+        ul {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -24,8 +49,6 @@
       height: 50px;
     }
     &.project {
-      width: 100%;
-      background-size: cover;
       height: 400px;
       .overlay {
         display: block;
@@ -34,20 +57,29 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background:rgba(0,0,0, 0.5);
-        section {
+        background:rgba(0,0,0, 0.6);
+        article {
           position: absolute;
           bottom: 0;
           color: #ffffff;
-          max-width: 50%;
+          max-width: 75%;
           padding: 10px;
           h2 {
             color:$color-aquamarine;
           }
+          ul {
+            display: block;
+            li {
+              display: inline-block;
+              padding: 10px;
+              margin: 5px 10px 5px 0;
+              background: #000000;
+            }
+          }
         }
       }
     }
-    ul {
+    &.home ul {
       display: block;
       li {
         display: block;
@@ -68,4 +100,15 @@
       }
     }
   }
+}
+@media screen and (min-width: 1000px) {
+    .banner {
+      &.project {
+        .overlay {
+          article {
+            max-width: 50%;
+          }
+        }
+      }
+    }
 }

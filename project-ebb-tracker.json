@@ -1,6 +1,6 @@
 {
   "name": "Ebb Tracker",
-  "imagePath": "/images/projects/ebb-tracker/preview.png",
+  "imagePath": "/images/projects/ebb-tracker/",
   "shortDesc": "Mobile web app designed to use NOAA data to get low tides",
   "overViewHTML": "<p>A single page web application designed to help users find tide pooling locations and low tide times near an address entered into the application. The application pulls data from NOAA's tides and currents API and then filters that data to create a visual interface for low tides at nearby beaches where the user can go tidepooling. Tide pooling locations were currated and stored in firebase.<p><h4>The Development Process</h4><p>This was a project I pitched in my 301 code fellows course. With the efforts of my team we were able to produce a working application with google maps integration in 5 days. I provided the UX and visual design for the project with my team voting on the visual interface they liked best. I took on the role of project manager and lead programmer, cutting and assigning tickets via waffle and assisting when someone became tripped up on a difficult problem. My previous experience as a graphic designer and front end developer put me in a uniquely qualified position to advise my group.</p>",
   "githubUrl": "https://github.com/CarrieShort/ebb-tracker",
@@ -10,7 +10,7 @@
   "design": true,
   "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. I chose a color scheme focused on blues to reflect the nature of the product.</p>",
   "colorScheme": ["4d73b8", "355ca4", "6c95e0", "f3ead4", "5e5e5e"],
-  "designImages": ["/images/projects/ebb-tracker/wireframe_01.png","/images/projects/ebb-tracker/wireframe_02.png","/images/projects/ebb-tracker/wireframe_03.png","/images/projects/ebb-tracker/wireframe_04.png"],
+  "designImages": ["wireframe_01.png","wireframe_02.png","wireframe_03.png","wireframe_04.png"],
   "contribution": ["product Owner", "UX/UI", "Visual Design", "CSS", "HTML", "javaScript", "jQuery"],
   "seoURL": "ebb-tracker"
 }

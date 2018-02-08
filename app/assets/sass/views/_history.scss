@@ -25,7 +25,7 @@
   article {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px;
+    padding: 5px;
     background: $color-white;
     .company {
       color: $color-dark-gray;
@@ -33,20 +33,21 @@
     ul {
       display: block;
       box-sizing: border-box;
-      width: calc(20% - 20px);
-      border-right: 1px solid $color-light-gray;
-      // background: $color-dark-gray;
-      // color: $color-white;
-      // padding: 0 20px;
-      // li {
-      //   color: $color-muted-aquamarine;
-      //   padding: 10px 0;
-      // }
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $color-light-gray;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        &before {
+          margin-right: 2px;
+        }
+      }
     }
     .summary {
-      width: 80%;
+      width: 100%;
       box-sizing: border-box;
-      padding: 0 20px;
+      padding: 0 5px;
     }
   }
   article:nth-child(2n) {
@@ -57,6 +58,27 @@
     }
     h3 {
       color: $color-muted-aquamarine;
+    }
+  }
+}
+@media screen and (min-width: 680px) {
+  .history {
+    article {
+      padding: 30px;
+      ul {
+        box-sizing: border-box;
+        width: calc(20% - 20px);
+        border: none;
+        border-right: 1px solid $color-light-gray;
+        li {
+          display: block;
+        }
+      }
+      .summary {
+        width: 80%;
+        box-sizing: border-box;
+        padding: 0 20px;
+      }
     }
   }
 }

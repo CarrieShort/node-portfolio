@@ -1,5 +1,5 @@
 <ng-container>
-  <section class="banner">
+  <section class="banner home">
     <ul>
       <li>UX/UI</li>
       <li>Visual Design</li>
@@ -16,7 +16,7 @@
     <h2>About</h2>
     <p>I'm a newly minted full stack javaScript Developer with a long history of product design and front end development. I got started in 2004 with a college job at the university of Montana, where students would design and develop websites for faculty, programs and other students. We would use fireworks to design a website and build out the website with HTML, CSS and flash. Since then I've made a career as a graphich designer and web developer sticking primarily to the front end. I've always found my favorite part of my job was the development side, so I recently took a series of courses at Code Fellows in order to improve my development skills and make a career shift into a full time development role.</p>
   </section>
-  <p data-ng-if="featuredCtrl.go()"></p>
+  <ng-container data-ng-if="featuredCtrl.go()" class="home"></ng-container>
     <section data-content="skills" class="experience">
        <article>
          <h3>Technology</h3>

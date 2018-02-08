@@ -48,13 +48,6 @@
     background: $color-dark-gray;
     color: $color-white;
     padding: 20px;
-    section:first-child {
-      width: 35%;
-    }
-    section:last-child {
-      width: 65%;
-      padding-left: 20px;
-    }
   }
   .contributions {
     width: calc(25% - 20px);
@@ -66,12 +59,5 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .project {
-    > section {
-      width: 50%;
-    }
-    section:last-child {
-      padding-left: 20px;
-    }
-  }
+
 }

@@ -10,7 +10,7 @@
   "design": true,
   "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. I chose a color scheme focused on blues to reflect the nature of the product.</p>",
   "colorScheme": ["2c4f70", "606278", "f0f0f0", "fffe9b", "79fac5", "66b9ff","f56bed"],
-  "designImages": ["wireframe-01.png","wireframe-02.png","wireframe-03.png","wireframe-04.png","wireframe-05.png","wireframe-06.png","wireframe-07.png","wireframe-08.png","logo.png"],
+  "designImages": ["wireframe-01.png","visual-design.png"],
   "contribution": ["product Owner", "UX/UI", "Visual Design", "CSS", "HTML", "javaScript", "jQuery"],
   "seoURL": "hue-manatee"
 }

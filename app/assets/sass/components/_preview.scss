@@ -49,6 +49,14 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    section {
+      h3 {
+        padding: 0;
+      }
+      p {
+        display: none;
+      }
+    }
   }
 }
 .details {
@@ -61,8 +69,8 @@
     display: flex;
     flex-wrap: wrap;
     article {
-      max-width: calc(50% - 20px);
-      margin: 10px;
+      max-width: calc(50% - 10px);
+      margin: 5px;
       img {
         width: 100%;
       }
@@ -75,6 +83,9 @@
         section {
           position: absolute;
           bottom: 20px;
+          p {
+            display: block;
+          }
         }
       }
       &:hover .overlay{
@@ -87,7 +98,7 @@
 @media screen and (min-width: 1200px) {
   .projects {
     article {
-      max-width: calc(100%/3 - 20px);
+      max-width: calc(100%/3 - 10px);
     }
   }
 }
