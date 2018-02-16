@@ -1,0 +1,12 @@
+{
+  "name": "React Twitter Interface",
+  "imagePath": "/images/projects/twitter-react/",
+  "shortDesc": "React interface for getting, posting and deleting tweets",
+  "overViewHTML": "<p>I wanted to take the opportunity to experiment with react and explore twitter APIs. The application imports your latest tweets, allows you to post new tweets in real time and delete tweets. It's a basic html interface, with no styling.</p>",
+  "githubUrl": "https://github.com/CarrieShort/twitter-react",
+  "featured": true,
+  "keywords": ["HTML", "React", "javaScript", "express", "REST API"],
+  "design": false,
+  "contribution": ["Lead Developer", "React", "HTML", "Routes", "Schema"],
+  "seoURL": "twitter-react"
+}
