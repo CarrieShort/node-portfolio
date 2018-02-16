@@ -6,8 +6,8 @@
   "githubUrl": "https://github.com/CarrieShort/socialCircle",
   "liveProject": "http://carrieshort.github.io/socialCircle/",
   "featured": true,
-  "keywords": ["jQuery", "CSS"],
+  "keywords": ["jQuery", "CSS", "HTML"],
   "design": false,
-  "contribution": ["jQuery", "Visual Design", "CSS"],
+  "contribution": ["jQuery", "Visual Design", "CSS", "HTML"],
   "seoURL": "social-circle"
 }

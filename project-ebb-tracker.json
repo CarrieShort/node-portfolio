@@ -6,11 +6,11 @@
   "githubUrl": "https://github.com/CarrieShort/ebb-tracker",
   "liveProject": "https://ebb-tracker.herokuapp.com/",
   "featured": true,
-  "keywords": ["jQuery", "CSS", "firebase", "page.js", "google maps", "ajax", "proxy server"],
+  "keywords": ["jQuery", "CSS", "firebase", "page.js", "google maps", "ajax", "proxy server", "functional programming", "handlebars.js"],
   "design": true,
   "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. I chose a color scheme focused on blues to reflect the nature of the product.</p>",
   "colorScheme": ["4d73b8", "355ca4", "6c95e0", "f3ead4", "5e5e5e"],
-  "designImages": ["wireframe_01.png","wireframe_02.png","wireframe_03.png","wireframe_04.png"],
+  "designImages": ["design-01.png","design-02.png","wireframes.png", "screenshot-01.png", "screenshot-02.png", "screenshot-03.png"],
   "contribution": ["product Owner", "UX/UI", "Visual Design", "CSS", "HTML", "javaScript", "jQuery"],
   "seoURL": "ebb-tracker"
 }
