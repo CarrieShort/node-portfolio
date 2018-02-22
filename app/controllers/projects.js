@@ -15,6 +15,8 @@ module.exports = function(app) {
       });
     };
     this.getAll = function() {
+      var filter = $location.hash();
+      this.filter = filter;
       $http({
         method: 'GET',
         url: 'api/projects'
