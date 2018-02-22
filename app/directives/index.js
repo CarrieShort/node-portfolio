@@ -4,5 +4,4 @@ module.exports = function(app) {
   require('./scroll-to-target.js')(app);
   require('./mixitup.js')(app);
   require('./on-finish-emit.js')(app);
-  require('./footer.js')(app);
 };
