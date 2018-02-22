@@ -1,0 +1,16 @@
+{
+  "name": "Personal Portfolio",
+  "imagePath": "/images/projects/portfolio/",
+  "shortDesc": "A node REST api designed to interface with philips hue bridge and light technology.",
+  "overViewHTML": "<p>A single page web application which makes it easier to interact with your Philips hue home automation system. Allows user to manage lights and groups of lights and use a friendly interface to enter a hex based color which translates into Hue's proprietary color library. Easily navigate between rooms and would allow user to remotely control house lights if they expose their bridge on a permanent URL.</p>",
+  "githubUrl": "https://github.com/hue-manatee/hue-manatee",
+  "liveProject": "https://hue-manatee.herokuapp.com/",
+  "featured": true,
+  "keywords": ["Angular", "Express", "mongoDB", "Philips Hue", "REST API", "Authentication", "HTML", "CSS", "Unit Testing"],
+  "design": true,
+  "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. The team chose hue manatee as the name of the application as a play on words and I designed the logo and color scheme to match this idea.</p>",
+  "colorScheme": ["2c4f70", "606278", "f0f0f0", "fffe9b", "79fac5", "66b9ff","f56bed"],
+  "designImages": ["artboards.png","visual-design.png"],
+  "contribution": ["product Owner", "UX", "Visual Design", "CSS", "HTML", "javaScript", "Routes", "Unit Test", "Angular"],
+  "seoURL": "hue-manatee"
+}
