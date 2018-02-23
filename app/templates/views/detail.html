@@ -1,5 +1,5 @@
 <ng-container data-ng-init="projectCtrl.getProject()">
-  <section class="project banner" style="background-image:url({{projectCtrl.projectData.imagePath}}preview.png)">
+  <section class="project banner" ng-if="dataHasLoaded" bg-img="{{projectCtrl.projectData.imagePath}}preview.png">
     <section class="overlay">
       <article>
           <h2>{{projectCtrl.projectData.name}}</h2>
@@ -8,26 +8,11 @@
           <ul class="keywords">
             <li data-ng-repeat="keyword in projectCtrl.projectData.keywords">{{keyword}}</li>
           </ul>
-          <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}"><img src="images/logo-icon.png"> View Project on Github</a></p>
-          <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img src="images/logo-icon.png"> Live Website</a></p>
+          <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}"><img ng-src="images/logo-icon.png"> View Project on Github</a></p>
+          <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img ng-src="images/logo-icon.png"> Live Website</a></p>
         </article>
     </section>
   </section>
-  <!-- <section class="project">
-      <section>
-        <h2>{{projectCtrl.projectData.name}}</h2>
-        <p>{{projectCtrl.projectData.shortDesc}}</p>
-        <h3><span class="subtitle">Project Includes</span></h3>
-        <ul class="keywords">
-          <li data-ng-repeat="keyword in projectCtrl.projectData.keywords">{{keyword}}</li>
-        </ul>
-        <p ng-if="projectCtrl.projectData.githubUrl !== undefined"><a href="{{projectCtrl.projectData.githubUrl}}"><img src="images/logo-icon.png"> View Project on Github</a></p>
-        <p ng-if="projectCtrl.projectData.liveProject !== undefined"><a href="{{projectCtrl.projectData.liveProject}}"><img src="images/logo-icon.png"> Live Website</a></p>
-    </section>
-    <section>
-    <img ng-src="{{projectCtrl.projectData.imagePath}}/preview.png">
-    </section>
-  </section> -->
   <section class="details">
     <section class="contributions">
       <h3>Contributions</h3>

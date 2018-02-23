@@ -2,7 +2,7 @@ module.exports = function(app) {
   app.controller('ProjectController', ['$http', '$location', '$scope', 'replaceSpace', function($http, $location, $scope, replaceSpace) {
     this.helpers = {};
     this.helpers.replaceSpace = replaceSpace;
-    console.log(this.helpers.replaceSpace)
+    $scope.dataHasLoaded = false;
     this.getProject = function() {
       var projectPath = $location.path().split('/').pop();
       $http({
@@ -10,8 +10,7 @@ module.exports = function(app) {
         url: 'api/project/' + projectPath
       }).then((res) => {
         this.projectData = res.data;
-      }, (response) => {
-        console.log(response);
+        $scope.dataHasLoaded = true
       });
     };
     this.getAll = function() {
@@ -31,10 +30,6 @@ module.exports = function(app) {
             this.all.keywordCount[this.all[i].keywords[j]] = (this.all.keywordCount[this.all[i].keywords[j]] || 0) + 1;
           }
         }
-
-      }, (response) => {
-        console.log(response);
-
       });
     };
   }]);
