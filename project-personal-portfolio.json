@@ -1,16 +1,16 @@
 {
   "name": "Personal Portfolio",
   "imagePath": "/images/projects/portfolio/",
-  "shortDesc": "A node REST api designed to interface with philips hue bridge and light technology.",
-  "overViewHTML": "<p>A single page web application which makes it easier to interact with your Philips hue home automation system. Allows user to manage lights and groups of lights and use a friendly interface to enter a hex based color which translates into Hue's proprietary color library. Easily navigate between rooms and would allow user to remotely control house lights if they expose their bridge on a permanent URL.</p>",
-  "githubUrl": "https://github.com/hue-manatee/hue-manatee",
-  "liveProject": "https://hue-manatee.herokuapp.com/",
-  "featured": true,
-  "keywords": ["Angular", "Express", "mongoDB", "Philips Hue", "REST API", "Authentication", "HTML", "CSS", "Unit Testing"],
+  "shortDesc": "An angular application displaying featured projects and work history",
+  "overViewHTML": "<p>I chose to build my portfolio in angular to explore its capabilities a little more. I encountered some challenges with integrating the mixItUp library as the function needed to be called after all of my portfolio items had been rendered by angular. Several resources suggested adding a timeOut, but this seemed like the lazy way out and either had the potential to fail or negatively impact the user experience. After looking into it a little more I created a directive that would broadcast once the last project loaded. I could then listen for this in the mixitup directive.</p>",
+  "githubUrl": "https://github.com/CarrieShort/node-portfolio",
+  "liveProject": "https://www.carrieshort.com",
+  "featured": false,
+  "keywords": ["UX", "Branding", "Angular", "Express", "mongoDB", "REST API", "HTML", "CSS", "jQuery", "javaScript"],
   "design": true,
-  "designHTML": "<p>This site was designed to be mobile first since we anticipated most use would be on a phone and we had a limited timeline. The design was flexible enough to work on a desktop computer, but would not look it's best. The team chose hue manatee as the name of the application as a play on words and I designed the logo and color scheme to match this idea.</p>",
-  "colorScheme": ["2c4f70", "606278", "f0f0f0", "fffe9b", "79fac5", "66b9ff","f56bed"],
-  "designImages": ["artboards.png","visual-design.png"],
-  "contribution": ["product Owner", "UX", "Visual Design", "CSS", "HTML", "javaScript", "Routes", "Unit Test", "Angular"],
-  "seoURL": "hue-manatee"
+  "designHTML": "<p>The site is fully responsive with custom break points added to provide the best experience at a variety of screen sizes. I wanted my portfolio to demonstrate that I had a background in design, but didn't want to focus to much on the design side.</p>",
+  "colorScheme": ["91eed9", "6fa89b", "fc456c", "3dd3b2", "ffffff", "3a3a3a","a8a8a8"],
+  "designImages": ["artboards.png","screenshot-mobile.png","screenshot-web.png"],
+  "contribution": ["product Owner", "UX", "Branding", "CSS", "HTML", "javaScript", "Routes", "Unit Test", "Angular"],
+  "seoURL": "personal-portfolio"
 }
