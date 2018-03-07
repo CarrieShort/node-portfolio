@@ -1,9 +1,8 @@
 const angular = require('angular');
 const portfolioApp = angular.module('portfolioApp', [require('angular-route'), require('angular-sanitize')]);
-
+require('./services')(portfolioApp);
 require('./controllers')(portfolioApp);
 require('./directives')(portfolioApp);
-require('./services')(portfolioApp);
 
 portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $locationProvider) {
   $routing
@@ -17,7 +16,12 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $
         controller: 'ProjectController',
         controllerAs: 'projectCtrl'
       })
-      .when('/portfolio/:name', {
+      .when('/portfolio:*', {
+          templateUrl: '/templates/views/portfolio.html',
+          controller: 'ProjectController',
+          controllerAs: 'projectCtrl'
+        })
+      .when('/project/:name', {
           templateUrl: '/templates/views/detail.html',
           controller: 'ProjectController',
           controllerAs: 'projectCtrl'
@@ -27,9 +31,6 @@ portfolioApp.config(['$routeProvider', '$locationProvider', function($routing, $
       })
     .when('/history', {
         templateUrl: '/templates/views/history.html'
-      })
-    .when('/portfolio/:project', {
-        templateUrl: '/templates/views/project.html'
       })
     .otherwise({
         template: '<h1>None</h1><p>Nothing has been selected</p>'

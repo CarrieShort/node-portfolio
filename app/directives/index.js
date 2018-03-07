@@ -5,4 +5,5 @@ module.exports = function(app) {
   require('./mixitup.js')(app);
   require('./on-finish-emit.js')(app);
   require('./bg-img.js')(app);
+  require('./banner-block.js')(app);
 };

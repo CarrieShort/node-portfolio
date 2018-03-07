@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/db');
 app.use('/api', projectRouter);
 
 app.use(express.static(__dirname + '/build'));
-app.use(['/portfolio/*', '/portfolio', '/about', '/history'], express.static(__dirname + '/build'));
+app.use(['/project/*', '/portfolio', '/about', '/history'], express.static(__dirname + '/build'));
 app.use((req, res) => {
   res.status(404).send('Page not found!');
 });

@@ -4,7 +4,8 @@ module.exports = function(app) {
         restrict: 'A',
         link: function(scope, element, attr) {
             if (scope.$last === true) {
-              $rootScope.$broadcast(attr.onFinishEmit);
+
+              setTimeout(function() {   $rootScope.$broadcast(attr.onFinishEmit); }, 1);
             }
         }
     }

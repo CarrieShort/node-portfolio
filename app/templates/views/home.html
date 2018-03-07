@@ -1,15 +1,7 @@
 <ng-container>
   <section class="banner home">
     <ul>
-      <li><a href="/portfolio/#ux">UX</a></li>
-      <li><a href="/portfolio/#branding">Branding</a></li>
-      <li><a href="/portfolio/#html">HTML</a></li>
-      <li><a href="/portfolio/#css">CSS</a></li>
-      <li><a href="/portfolio/#jquery">jQuery</a></li>
-      <li><a href="/portfolio/#javascript">javaScript</a></li>
-      <li><a href="/portfolio/#node-js">Node</a></li>
-      <li><a href="/portfolio/#react">React</a></li>
-      <li><a href="/portfolio/#angular">Angular</a></li>
+      <banner-block data-ng-repeat="block in ['UX', 'Branding', 'HTML', 'CSS', 'jQuery', 'javaScript', 'Node', 'React', 'Angular']"></banner-block>
     </ul>
   </section>
   <section data-content="about">

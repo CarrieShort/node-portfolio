@@ -1,7 +1,7 @@
 var mixitup = require('mixitup');
 
 module.exports = function(app) {
- app.directive('mixItUp', ($timeout, $rootScope) => {
+ app.directive('mixItUp', ['loadFilter', 'replaceSpace', (loadFilter, replaceSpace, $timeout, $rootScope) => {
    return {
      restrict: 'A',
      scope: {
@@ -9,16 +9,19 @@ module.exports = function(app) {
      },
      link: function(scope, element, attrs, controller) {
                scope.$on('projectsLoaded', function(){
-                 var mixer = mixitup(element);
-                 console.log(scope.$parent.projectCtrl.filter)
-                 if (scope.$parent.projectCtrl.filter) {
-                   setTimeout(function() { mixer.filter('.category-' + scope.$parent.projectCtrl.filter); }, 10);
-                 }
+                 var filter = replaceSpace(loadFilter.current()).toLowerCase();
+                 var mixer = mixitup(element, {
+                   load: {
+        filter: '.category-' + filter
+    }
+                 });
                  $('.filter ul li').click(function() {
-                   history.pushState(null, null, '/portfolio#' + $(this).attr('data-filter').split('.category-').pop());
+                   var newFilter = $(this).attr('data-filter').split('.category-').pop();
+                   loadFilter.updateFilter()
+                   localStorage.setItem('filter', newFilter);
                  });
                });
      }
    }
- });
+ }]);
 }
